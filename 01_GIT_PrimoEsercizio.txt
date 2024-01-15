@@ -1,0 +1,42 @@
+Creare cartella progetto con file
+Associare git
+	$ git init
+Prima Commit
+	$ git add --all
+	$ git commit -m “prima commit”
+Creare un repository su Github e copiare indirizzo https
+Associare repository github al progetto
+	$ git remote add origin <indirizzo https>
+Fare push
+ 	$ git push -u origin --all
+Creare branch
+	$ git branch mioBranch1
+	$ git checkout mioBranch1
+fare modifica 1
+Committare modifica 1
+	$ git add --all
+	$ git commit -m “commit uno branch uno”
+Pushare modifica 1
+	$ git push origin mioBranch1
+fare modifica 2
+Committare modifica 2
+	$ git add --all
+	$ git commit -m “commit due branch uno”
+Pushare modifica 2
+	$ git push origin mioBranch1
+fare modifica 3
+Committare modifica 3
+	$ git add --all
+	$ git commit -m “commit tre branch uno”
+Pushare modifica 3
+	$ git push origin mioBranch1
+Riportare suk main solo modifica 1 e 2
+	$ git log
+	$ git checkout master
+	$ git pull
+	$ git cherry-pick <commitSHA1> <commitSHA2>
+pushare il main
+	$ git push origin master
+fare tag dal main
+	$ git tag -a v1.0.0 -m "my version 1.0.0"
+	$ git push origin --tags
